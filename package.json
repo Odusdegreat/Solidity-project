@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "hh:compile": "set LOCALAPPDATA=%CD%\\.localapp&& node ./node_modules/hardhat/dist/src/cli.js compile",
+    "hh:test": "set LOCALAPPDATA=%CD%\\.localapp&& node ./node_modules/hardhat/dist/src/cli.js test",
+    "hh:deploy": "set LOCALAPPDATA=%CD%\\.localapp&& node ./node_modules/hardhat/dist/src/cli.js run scripts/deploy.ts",
+    "test": "npm run hh:test"
   },
   "keywords": [],
   "author": "",

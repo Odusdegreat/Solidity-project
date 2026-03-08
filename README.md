@@ -61,19 +61,19 @@ From project root:
 Compile contracts:
 
 ```bash
-npx hardhat compile
+npm run hh:compile
 ```
 
 Run tests:
 
 ```bash
-npx hardhat test
+npm test
 ```
 
 Deploy locally:
 
 ```bash
-npx hardhat run scripts/deploy.ts
+npm run hh:deploy
 ```
 
 ## Frontend Commands
